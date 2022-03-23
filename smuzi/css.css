@@ -2,4 +2,30 @@ h1 { text-align: center }
 
 style="font-family: sans-serif;" 
 
-bgcolor="ffffff"
+.btn {
+	display: inline-block; 
+	background: #8C959D;
+	color: #fff; 
+	padding: 0.5rem 1rem;
+	text-decoration: none; 
+	border-radius: 3px; 
+}
+
+.cards {
+	display:  flex;
+}
+
+.card {
+	margin: 0 10px 10px 0;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+	transition: 0.3s;
+	cursor:  pointer;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+	padding: 2px 16px;
+}
