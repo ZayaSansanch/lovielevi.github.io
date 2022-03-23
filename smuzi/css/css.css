@@ -1,6 +1,8 @@
-h1 { text-align: center }
+body {
+	font-family: sans-serif;
+}
 
-style="font-family: sans-serif;" 
+h1 { text-align: center }
 
 .btn {
 	display: inline-block; 
