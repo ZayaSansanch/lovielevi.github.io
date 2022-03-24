@@ -17,6 +17,7 @@ h1 { text-align: center }
 
 .cards {
 	display:  flex;
+	flex-wrap: wrap;
 }
 
 .card {
@@ -25,6 +26,7 @@ h1 { text-align: center }
 	transition: 0.3s;
 	cursor:  pointer;
 	padding: 2px 16px;
+	flex-grow: 1;
 }
 
 .card:hover {
