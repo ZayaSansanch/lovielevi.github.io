@@ -4,6 +4,8 @@ body {
 
 h1 { text-align: center }
 
+#p1 { text-align: center }
+
 .btn {
 	display: inline-block; 
 	background: #8C959D;
@@ -22,6 +24,7 @@ h1 { text-align: center }
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 	transition: 0.3s;
 	cursor:  pointer;
+	padding: 2px 16px;
 }
 
 .card:hover {
