@@ -4,6 +4,10 @@ body {
 
 h1 { text-align: center }
 
+.marginrecept {
+	margin: 0 10px 0 0;
+}
+
 .recept1 {
 	flex-direction: column;
 }
@@ -12,10 +16,15 @@ h1 { text-align: center }
 }
 .cardrecept {
 	margin: 0 10px 10px 0;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1); 
 	padding: 2px 16px;
 	display:  flex;
 	flex-direction: row;
+	transition: 0.2s;
+}
+.cardrecept:hover {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin: 0px -5px 10px -5px;
 }
 .cardrecept2 {
 	margin: 0 10px 10px 0;
@@ -54,6 +63,7 @@ h1 { text-align: center }
 
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	margin: -5px 10px -5px 0px;
 }
 
 .container {
