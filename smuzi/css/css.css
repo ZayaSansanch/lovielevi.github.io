@@ -108,7 +108,7 @@ h4 {
 	transition: 0.3s;
 	cursor:  pointer;
 	padding: 2px 16px;
-	/*flex-grow: 1;*/
+	flex-grow: 1;
 	border-radius: 10px;
 }
 
