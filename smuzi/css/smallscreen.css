@@ -6,6 +6,10 @@ body {
 	height: 150;
 }
 
+.header {
+	margin: 20px 0 1px 0;
+}
+
 .h11 {
 	margin: 40px 0 1px 0;
 	text-align: center;
@@ -19,6 +23,13 @@ body {
 	flex-direction: column;
 	transition: 0;
 	border-radius: 0; 
+}
+
+.containerr {
+	background-color: #ffffffcc;
+	padding: 2px 16px;
+	display: block;
+	flex-direction: column;
 }
 
 .cardrecept2 {
