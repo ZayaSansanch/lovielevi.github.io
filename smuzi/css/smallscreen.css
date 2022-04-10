@@ -6,6 +6,14 @@ body {
 	height: 150;
 }
 
+.butteninfo {
+	top: 5px;
+}
+
+.solid {
+	top: -100px;
+}
+
 .header {
 	margin: 20px 0 1px 0;
 }

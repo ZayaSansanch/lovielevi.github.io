@@ -14,13 +14,59 @@ button {
 	font-size: 10px;
 }
 
-.panel {
+.butteninfo {
 	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgb(90, 134, 175);
-	height: 250;
+	top: -100px;
+	right: 5px;
+}
+
+.forsolid {
 	width: 100%;
+	height: 15px;
+	background-color: rgb(152, 251, 152);
+	position: absolute;
+	top: 50px;
+	animation: polosasolid 1s ease-in-out 5;
+}
+
+.solid {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(144, 238, 144);
+	position: absolute;
+	top: -50px;
+	left: 0;
+	transition: top 1s ease-in-out;
+}
+
+.solid:hover {
+	top: 0;
+	animation: rendersolid 2s ease-in-out;
+}
+
+.solid h1 {
+	margin: 0;
+	text-align: center;
+}
+
+/* @keyframes rendersolid {
+	0% {
+		background-color: rgb(144, 238, 144);
+	}
+	50% {
+		background-color: rgb(152, 251, 152);
+	}
+} */
+@keyframes polosasolid {
+	0% {
+		background-color: rgb(152, 251, 152);
+	}
+	50% {
+		background-color: rgb(0, 100, 0);
+	}
+	100% {
+		background-color: rgb(152, 251, 152);
+	}
 }
 
 #textup {
