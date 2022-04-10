@@ -6,9 +6,82 @@
 	<title>test</title>
 </head>
 <body>
-<div class="kvadrender"></div>
+<div class="d1"></div>
+<div class="d2"></div>
+<div class="d3"></div>
 
-<style type="text/css">
+<style>
+	.d1 {
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: rgb(177, 177, 177);
+		position: absolute;
+		top: 40%;
+		left: 46.5%;
+		animation: renderd1 3s ease-in-out infinite;
+	}
+	.d2 {
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: rgb(177, 177, 177);
+		position: absolute;
+		top: 40%;
+		right: 50%;
+		animation: renderd2 3s ease-in-out infinite;
+	}
+	.d3 {
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: rgb(177, 177, 177);
+		position: absolute;
+		top: 40%;
+		right: 48%;
+		animation: renderd3 3s ease-in-out infinite;
+	}
+
+	@keyframes renderd1 {
+		0% {
+			height: 30px;
+			width: 30px;
+		}
+		33.3% {
+			height: 20px;
+			width: 20px;
+		
+		}
+	}
+	@keyframes renderd2 {
+		33.3% {
+			height: 30px;
+			width: 30px;
+		}
+		66.6% {
+			height: 20px;
+			width: 20px;
+		}
+	}
+	@keyframes renderd3 {
+		66.6% {
+			height: 30px;
+			width: 30px;
+		}
+		100% {
+			height: 20px;
+			width: 20px;
+		}
+	}
+</style>
+
+
+
+
+
+<!-- <div class="kvadrender"></div> -->
+
+<!-- <style type="text/css">
 	.kvadrender {
 		width: 200px;
 		height: 200px;
@@ -46,7 +119,7 @@
 			border-radius: 150px;
 		}
 	}
-</style>
+</style> -->
 
 
 

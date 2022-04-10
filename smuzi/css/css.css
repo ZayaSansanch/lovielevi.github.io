@@ -14,11 +14,63 @@ button {
 	font-size: 10px;
 }
 
-.polosaprokrutki {
-	height: 10px;
-	background-color: rgb(255, 0, 0);
-	width: 100%;
-	position: relative;
+@keyframes wiggle {
+	0%, 7% {
+	  transform: rotateZ(0);
+	}
+	15% {
+	  transform: rotateZ(-15deg);
+	}
+	20% {
+	  transform: rotateZ(10deg);
+	}
+	25% {
+	  transform: rotateZ(-10deg);
+	}
+	30% {
+	  transform: rotateZ(6deg);
+	}
+	35% {
+	  transform: rotateZ(-4deg);
+	}
+	40%, 100% {
+	  transform: rotateZ(0);
+	}
+}
+@keyframes wigglee {
+	0%, 7% {
+	  transform: rotateZ(0);
+	}
+	15% {
+	  transform: rotateZ(-3.75deg);
+	}
+	20% {
+	  transform: rotateZ(2.5deg);
+	}
+	25% {
+	  transform: rotateZ(-2.5deg);
+	}
+	30% {
+	  transform: rotateZ(1.5deg);
+	}
+	35% {
+	  transform: rotateZ(-1deg);
+	}
+	40%, 100% {
+	  transform: rotateZ(0);
+	}
+}
+
+@keyframes wiggllee {
+	0% {
+		top: -50px;
+	}
+	50% {
+		top: -40px;
+	}
+	100% {
+		top: -50px;
+	}
 }
 
 .butteninfo {
@@ -221,6 +273,17 @@ button {
 	text-decoration: none; 
 	border-radius: 3px; 
 }
+
+.btni {
+	display: inline-block; 
+	background: #8C959D;
+	color: #fff; 
+	padding: 0.5rem 1rem;
+	text-decoration: none; 
+	border-radius: 3px; 
+	animation: wiggle 2s linear infinite;"
+}
+
 .btn:hover {
 	display: inline-block; 
 	background: #233211;
