@@ -85,7 +85,7 @@ button {
 	background-color: rgb(133, 200, 255);
 	position: absolute;
 	top: 50px;
-	animation: polosasolid 1s ease-in-out 5;
+	animation: polosasolid 1s ease-in-out 3;
 }
 
 .solid {
