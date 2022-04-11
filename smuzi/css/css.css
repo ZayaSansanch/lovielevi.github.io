@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif;
-	background-image:url(img/bgimg.jpg);
+	background-image: url(img/bgimg.jpg);
 }
 
 h1 { text-align: center }
@@ -12,6 +12,18 @@ h4 {
 button {
 	border:none;
 	font-size: 10px;
+}
+
+@keyframes top {
+	0% {
+		top: -15px;
+	}
+	50% {
+		top: 5px;
+	}
+	100% {
+		top: -15px;
+	}
 }
 
 @keyframes wiggle {
