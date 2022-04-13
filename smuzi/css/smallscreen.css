@@ -7,7 +7,14 @@ body {
 }
 
 .butteninfo {
+	position: absolute;
 	top: 5px;
+	right: 5px;
+	width: 100%;
+}
+
+.cardrecept2 video {
+	width: 100%;
 }
 
 .solid {
