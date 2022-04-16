@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet</title>
+</head>
+<body>
+    <form action="" method="post" name="parametr" onsubmit="valid(this)">
+        <label for="name">Имя планеты:</label>
+        <input type="text" name="name" placeholder="Имя планеты" id="name">
+        <br>
+        <br>
+        <label for="name">Радиус орбиты:</label>
+        <input type="text" name="name" placeholder="Радиус орбиты" id="R">
+        <br>
+        <br>
+        <label for="name">Время обрашения по орбите:</label>
+        <input type="text" name="name" placeholder="Время обрашения по орбите" id="T">
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Submit" id="submit">
+    </form>
+<script>
+function valid(form) {
+    var name = form.name.valid
+    var retur
+    var returname
+    if (name == "" || name == " ") {
+        retur = "не корректное имя"
+    }
+        retur = name
+
+    alert(retur)
+}
+</script>
+<style>
+    input {
+        width: 15%;
+    }
+    #submit {
+        width: 5%;
+    }
+</style>
+</body>
+</html>

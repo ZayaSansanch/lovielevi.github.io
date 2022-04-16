@@ -269,6 +269,9 @@ button {
 .recept3 {
 	border-radius: 10px; 
 }
+.recept4 {
+	height: 100px;
+}
 .ingredients {
 	margin: 20px 0 0 0 ;
 	flex-direction: column;
