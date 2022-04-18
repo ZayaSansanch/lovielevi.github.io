@@ -1,0 +1,97 @@
+<div class="layer">
+  <div class="viewport">
+    <div class="wrapper">
+      <div class="item" style="--color: red"></div>
+      <div class="item" style="--color: blue"></div>
+      <div class="item" style="--color: green"></div>
+    </div>
+  </div>
+  <button class="left">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z"
+      />
+    </svg>
+  </button>
+  <button class="right">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z"
+      />
+    </svg>
+  </button>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+    .layer {
+      margin: auto;
+      position: relative;
+    }
+    .viewport {
+      width: 600px;
+      height: 200px;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .wrapper {
+      display: flex;
+    }
+    .item {
+      width: 600px;
+      height: 200px;
+      background-color: var(--color);
+      flex: 1 0 600px;
+    }
+    .left,
+    .right {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      padding: 0;
+      border-radius: 100%;
+    }
+    .right {
+      left: unset;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+    .left svg,
+    .right svg {
+      display: block;
+      width: 48px;
+      height: 48px;
+    }
+  </style>
+  <script>
+    var left = document.querySelector('.left')
+    var right = document.querySelector('.right')
+    var viewport = document.querySelector('.viewport')
+    left.addEventListener('click', function () {
+      viewport.scrollBy({
+        left: -600,
+        behavior: 'smooth'
+      })
+    })
+    right.addEventListener('click', function () {
+      viewport.scrollBy({
+        left: 600,
+        behavior: 'smooth'
+      })
+    })
+  </script>
+</div>

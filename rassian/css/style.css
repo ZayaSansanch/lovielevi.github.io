@@ -7,9 +7,11 @@ body {
 #h1h5 h1 {
     margin: 0;
 }
+
 #h1h5 h5 {
     margin: 0;
 }
+
 #h1h5 {
     position: absolute;
     top: 35%;
@@ -27,12 +29,12 @@ body {
 #curs article {
     display: flex;
     flex-direction: row;
-    justify-content: center ;
+    justify-content: center;
     /* background-color: aqua; */
     height: 80%;
 }
 
-.c1 {
+#c1, #c2, #c3 {
     width: 30%;
     height: 80%;
     margin: 0 2.5% 0 2.5%;
@@ -40,11 +42,43 @@ body {
     background-color: #e3e3e3;
     border-radius: 2rem;
     font-size: 125%;
+    overflow: hidden;
 }
-.c1:hover {
+
+/* .c1:hover {
     background-color: #bababa;
     transition: 0.5s;
     height: 82.5%;
+} */
+
+#c1 img, h3 {
+    position: relative;
+    top: -70%;
+}
+
+#c1:hover img {
+    top: 0%;
+    transition: 0.33s;
+}
+
+#c2 img, h3 {
+    position: relative;
+    top: -70%;
+}
+
+#c2:hover img {
+    top: 0%;
+    transition: 0.33s;
+}
+
+#c3 img, h3 {
+    position: relative;
+    top: -70%;
+}
+
+#c3:hover img {
+    top: 0%;
+    transition: 0.33s;
 }
 
 #footer {
@@ -61,9 +95,11 @@ body {
 #footer h4 {
     color: #1d1d1f;
 }
+
 #footer p {
     color: #424245;
 }
+
 .footer1 {
     margin: 0 0 1% 0;
 }
