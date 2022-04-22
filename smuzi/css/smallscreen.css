@@ -1,67 +1,75 @@
 body {
-	font-size: 25px;
+    font-size: 25px;
+    position: relative;
 }
 
 .height {
-	height: 150;
+    height: 150;
 }
 
 .butteninfo {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 100%;
 }
 
 .cardrecept2 video {
-	width: 100%;
+    width: 100%;
+}
+
+#footer {
+    position: relative;
+    /* bottom: 0; */
 }
 
 .solid {
-	top: -100px;
+    top: -100px;
 }
 
 .header {
-	margin: 20px 0 1px 0;
+    margin: 20px 0 1px 0;
 }
 
 .h11 {
-	margin: 40px 0 1px 0;
-	text-align: center;
+    margin: 40px 0 1px 0;
+    text-align: center;
 }
 
 .cardrecept {
-	margin: 0 0 0 0;
-	box-shadow: 0 0 0 0 rgba(0,0,0,0); 
-	padding: 2px 16px;
-	display:  block;
-	flex-direction: column;
-	transition: 0;
-	border-radius: 0; 
+    margin: 0 0 0 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    padding: 2px 16px;
+    display: block;
+    flex-direction: column;
+    transition: 0;
+    border-radius: 0;
 }
 
 .containerr {
-	background-color: #ffffffcc;
-	padding: 2px 16px;
-	display: block;
-	flex-direction: column;
+    background-color: #ffffffcc;
+    padding: 2px 16px;
+    display: block;
+    flex-direction: column;
 }
 
 .cardrecept2 {
-	margin: 0 10px 10px 0;
-	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-	padding: 2px 16px;
-	display:  block;
-	flex-direction: column;
+    margin: 0 10px 10px 0;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    padding: 2px 16px;
+    display: block;
+    flex-direction: column;
 }
 
 .cardrecept2 {
-	margin: 0 10px 10px 0;
-	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-	padding: 2px 16px;
-	display:  flex;
-	flex-direction: row;
+    margin: 0 10px 10px 0;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: row;
 }
+
+
 /*
 @media="screen and (max-width: 500px)" {
 		@media (min-width:320px)  { smartphones, iPhone, portrait 480x320 phones}

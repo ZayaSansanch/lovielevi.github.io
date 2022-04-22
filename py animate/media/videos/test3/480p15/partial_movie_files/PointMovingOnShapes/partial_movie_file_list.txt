@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lev/Documents/18.03.2022/GitHub/lovielevi.github.io/py animate/media/videos/test3/480p15/partial_movie_files/PointMovingOnShapes/3163782288_3872478804_223132457.mp4'
