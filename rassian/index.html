@@ -4,101 +4,92 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Rassian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Russian Cursive</title>
 </head>
 
-<body>
-    <div id="ocnova" onclick="sdvig()">
-        <div class="o3" id="ol3">
-            <h2>text3</h2>
+<body style="color: #534340;">
+    <img src="img/bg1.jpg" style="z-index: -1; height: 100%; width: 100%; position: absolute; top: 0; left: 0;" />
+    <main>
+        <section id="h1h5" style="font-size: 150%;">
+            <h1>Here you can learn <br />russian cursive!</h1>
+            <h5>Здесь вы можете научиться писать <br />русским курсивом</h5>
+        </section>
+        <div id="ocnova">
+            <div class="o3" id="ol3">
+                <h2>Написание осмысленных текстов</h2>
+            </div>
+            <div class="o2" id="ol2">
+                <h2>Изучение соеденений букв</h2>
+            </div>
+            <div class="o1" id="ol1">
+                <h2>Изучение прописного алфавита</h2>
+            </div>
         </div>
-        <div class="o2" id="ol2">
-            <h2>text2</h2>
-        </div>
-        <div class="o1" id="ol1">
-            <h2 onclick="location.href='cursiv.html'">text1</h2>
-        </div>
-    </div>
-    <style>
-        #ocnova {
-            background-color: aqua;
-            margin: 10% 20% 0 20%;
-            height: 200px;
-            overflow: hidden;
-            border-radius: 2rem;
-            /* border: black solid 1px; */
-            cursor: pointer;
-        }
-        
-        .o1 {
-            text-align: center;
-            background-color: rgb(21, 255, 0);
-            height: 200px;
-            position: relative;
-            top: -460px;
-            margin: 0;
-            transition: 1s;
-        }
-        
-        .o1 h2 {
-            background-color: brown;
-        }
-        
-        .o2 {
-            text-align: center;
-            background-color: rgb(0, 89, 255);
-            height: 200px;
-            position: relative;
-            top: -240px;
-            margin: 0;
-            transition: 1s;
-        }
-        
-        .o3 {
-            text-align: center;
-            background-color: rgb(255, 0, 0);
-            height: 200px;
-            position: relative;
-            top: -20px;
-            margin: 0;
-        }
-        
-        .vnepola {
-            position: relative;
-            top: 210px;
-            transition: 2s;
-        }
-    </style>
+        <script>
+            var num = 1
+            var ol1 = document.getElementById('ol1')
+            var ol2 = document.getElementById('ol2')
+            var ol3 = document.getElementById('ol3')
 
-    <script>
-        var num = 1
-        var ol1 = document.getElementById('ol1')
-        var ol2 = document.getElementById('ol2')
-        var ol3 = document.getElementById('ol3')
+            setInterval(sdvig, 1500, 10)
 
-        function sdvig() {
-            if (num == 1) {
-                ol1.classList.add('vnepola')
+            function sdvig() {
+                if (num == 1) {
+                    ol1.classList.add('vnepola')
+                }
+                if (num == 2) {
+                    ol2.classList.add('vnepola')
+                }
+                // if (num == 3) {
+                //   ol3.classList.add("vnepola");
+                // }
+                if (num == 3) {
+                    ol1.classList.remove('vnepola')
+                    ol2.classList.remove('vnepola')
+                    ol3.classList.remove('vnepola')
+                    num = 0
+                }
+                num++
+                console.log({
+                    num: num
+                })
             }
-            if (num == 2) {
-                ol2.classList.add('vnepola')
-            }
-            // if (num == 3) {
-            //   ol3.classList.add("vnepola")
-            // }
-            if (num == 3) {
-                ol1.classList.remove('vnepola')
-                ol2.classList.remove('vnepola')
-                ol3.classList.remove('vnepola')
-                num = 0
-            }
-            num++
-            console.log({
-                num: num
-            })
-        }
-    </script>
+        </script>
+        <footer id="footer" style="position: absolute; bottom: -125%;">
+            <div class="footer1">
+                <h4>Разработка:</h4>
+                <a href="https://www.instagram.com/pipercat2021/">Lëvi</a>
+                <br />
+                <br />
+                <a href="https://www.instagram.com/learunasoo/">Learunaso</a>
+                <br />
+                <br />
+                <a href="https://www.instagram.com/pipercat2021/">Ru Languge (instargram)</a>
+                <br />
+                <a href="https://t.me/rulanguageproject">Ru Languge (telegramm)</a>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>
+
+<!-- <section id="curs">
+    <h2 style="font-size: 120%;">Курсы:</h2>
+    <article>
+        <div id="c1">
+            <img src="img/1.jpg" style="height: 60%; width: 80%; margin: 10% 0 0 0; z-index: 10;" class="img">
+            <h3>Изучение прописного алфавита</h3>
+        </div>
+        <div id="c2">
+            <img src="img/3.jpg" style="height: 60%; width: 90%; margin: 10% 0 0 0; z-index: 10;" class="img">
+            <h3>Изучение соеденений <br>букв</h3>
+        </div>
+        <div id="c3">
+            <img src="img/2.jpg" style="height: 60%; margin: 10% 0 0 0; z-index: 10;" class="img">
+            <h3>Написание осмысленных текстов</h3>
+        </div>
+    </article>
+</section> -->

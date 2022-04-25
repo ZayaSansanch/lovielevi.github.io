@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Rassian</title>
+</head>
+
+<body>
+    <div id="ocnova" onclick="sdvig()">
+        <div class="o3" id="ol3">
+            <h2>text3</h2>
+        </div>
+        <div class="o2" id="ol2">
+            <h2>text2</h2>
+        </div>
+        <div class="o1" id="ol1">
+            <h2 onclick="location.href='cursiv.html'">text1</h2>
+        </div>
+    </div>
+    <style>
+        #ocnova {
+            background-color: aqua;
+            margin: 10% 20% 0 20%;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 2rem;
+            /* border: black solid 1px; */
+            cursor: pointer;
+        }
+        
+        .o1 {
+            text-align: center;
+            background-color: rgb(21, 255, 0);
+            height: 200px;
+            position: relative;
+            top: -460px;
+            margin: 0;
+            transition: 1s;
+        }
+        
+        .o1 h2 {
+            background-color: brown;
+        }
+        
+        .o2 {
+            text-align: center;
+            background-color: rgb(0, 89, 255);
+            height: 200px;
+            position: relative;
+            top: -240px;
+            margin: 0;
+            transition: 1s;
+        }
+        
+        .o3 {
+            text-align: center;
+            background-color: rgb(255, 0, 0);
+            height: 200px;
+            position: relative;
+            top: -20px;
+            margin: 0;
+        }
+        
+        .vnepola {
+            position: relative;
+            top: 210px;
+            transition: 2s;
+        }
+    </style>
+
+    <script>
+        var num = 1
+        var ol1 = document.getElementById('ol1')
+        var ol2 = document.getElementById('ol2')
+        var ol3 = document.getElementById('ol3')
+
+        function sdvig() {
+            if (num == 1) {
+                ol1.classList.add('vnepola')
+            }
+            if (num == 2) {
+                ol2.classList.add('vnepola')
+            }
+            // if (num == 3) {
+            //   ol3.classList.add("vnepola")
+            // }
+            if (num == 3) {
+                ol1.classList.remove('vnepola')
+                ol2.classList.remove('vnepola')
+                ol3.classList.remove('vnepola')
+                num = 0
+            }
+            num++
+            console.log({
+                num: num
+            })
+        }
+    </script>
+</body>
+
+</html>
